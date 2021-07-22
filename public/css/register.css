@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --color-amarillo:#eac926;
+    --color-azul:#03264C;
+    --color-celeste:#1259c3;
+    --color-grisOscuro:#666;
+    --color-grisClaro:#ebebeb;
+    --color-verde:#39b54a;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+/* HEADER */
+.register header{
+    background-color:var(--color-amarillo);
+}
+
+.register header img{
+    display: inline;
+    width: 50%;
+}
+
+.register header div.hm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.register header div.search-bar{
+    display: flex;
+    align-items: center;
+    width: 47%;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+.register header div.search-bar input{
+    border: 1px;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.register header i.fa-search{
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.register header div.cuotas {
+    display: block;
+    text-align: center;    
+}
+
+.register header nav.nav-bar, .register header nav.login-bar{
+    display:none;
+    padding-bottom: 20px;
+}
+
+.register header div.burger-menu i{
+    margin: 5vh 50vw;
+    border-radius: 5px;
+    border: solid var(--color-celeste) 10px;
+    background-color:var(--color-celeste);
+    color: white;
+}
+
+/* MAIN */
+
+.register main{
+    background-color: var(--color-grisClaro);
+    padding-bottom: 20px;
+}
+
+.register main form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register main form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.register main form label{
+    padding: 1%;
+}
+
+.register main form input{
+    width: 70%;
+    padding: 5px;
+}
+
+.register main form h3{
+    width: 100%;
+    text-align: center;
+}
+
+.register main form span{
+    color: #ff0505;
+}
+
+.register main form div.radio-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.register main form div.check-form{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.register main form div.check-form label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register main form div.buttons{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.register main form div.buttons input{
+    width: 40%;
+    border-radius: 5vw;
+}
+
+/* FOOTER */
+
+.register footer section article{
+    padding-top: 10px;
+    text-align: center;
+    margin: 40px 10%;
+}
+
+.register footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-celeste);
+}
+
+/* TABLET */
+
+@media (min-width:426px){
+
+    *{
+    font-size: 2vw;
+    }
+
+    /* HEADER */
+
+    .register header div.ht{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .register header nav.nav-bar, .register header nav.login-bar{
+        display: block;
+        width: 50%;
+    }
+
+    .register header div.ht ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .register header div.burger-menu{
+        display: none;
+    }
+    
+    /* FOOTER */
+
+    .register footer section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .register footer section article{
+        width: 20%;
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+/* Desktop */
+
+@media (min-width:769px){
+
+    *{
+        font-size: 1.5vw;
+    }
+
+    /* HEADER */
+
+    .register header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* FOOTER */
+
+    .register footer section article{
+        width: 25%;
+    }
+
+}

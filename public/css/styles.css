@@ -1,0 +1,280 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --color-amarillo:#eac926;
+    --color-azul:#03264C;
+    --color-celeste:#1259c3;
+    --color-grisOscuro:#666;
+    --color-grisClaro:#ebebeb;
+    --color-verde:#39b54a;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* HEADER */
+.home header{
+    background-color:var(--color-amarillo);
+}
+
+.home header img{
+    display: inline;
+    width: 50%;
+}
+
+.home header div.hm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.home header div.search-bar{
+    display: flex;
+    align-items: center;
+    width: 47%;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+.home header div.search-bar input{
+    border: 1px;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.home header i.fa-search{
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.home header div.cuotas {
+    display: block;
+    text-align: center;    
+}
+
+.home header nav.nav-bar, .home header nav.login-bar{
+    display:none;
+    padding-bottom: 20px;
+}
+
+.home header div.burger-menu i{
+    margin: 5vh 50vw;
+    border-radius: 5px;
+    border: solid var(--color-celeste) 10px;
+    background-color:var(--color-celeste);
+    color: white;
+}
+
+/* MAIN */
+
+.home main{
+    background-color: var(--color-grisClaro);
+    padding-bottom: 20px;
+}
+
+.home main div.banner img{
+    display: none;
+    width: 100%;
+}
+
+.home main section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home main section article{
+    background-color: white;
+    margin: 10px;
+}
+
+.home main section article div{
+    border-top: 1px var(--color-grisClaro) solid;
+    padding: 15px;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home main h2{
+    font-size: 24px;
+    line-height: 32px;
+    padding:10px;
+}
+
+.home main section article h3{
+    display:none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.home main p.precio{
+    font-size: 18px;
+    line-height: 26px;
+    width: 70%;
+    
+}
+
+.home main p.descuento{
+    font-size: 16px;
+    line-height: 24px;
+    width: 30%;
+    
+}
+
+.home main i.fas.fa-truck{
+    border: 1px solid var(--color-verde);
+    border-radius: 57%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.home main i.fa-truck::before{
+    font-size: 100%;
+    color: var(--color-verde);
+}
+
+.home main p.descuento{
+    color: var(--color-verde);
+}
+
+/* FOOTER */
+.home footer section article{
+    padding-top: 10px;
+    text-align: center;
+    margin: 40px 10%;
+}
+
+.home footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-celeste);
+}
+
+
+/* TABLET */
+
+@media (min-width:426px){
+
+    *{
+    font-size: 2vw;
+    }
+
+    /* HEADER */
+
+    .home header div.ht{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home header nav.nav-bar, .home header nav.login-bar{
+        display: block;
+        width: 50%;
+    }
+
+    .home header div.ht ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .home header div.burger-menu{
+        display: none;
+    }
+
+    /* MAIIN */
+    
+    .home main div.banner img{
+        display: block;
+        width: 100%;
+    }
+
+    .home main section{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .home main section div.contain{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .home main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+
+    .home main section article h3{
+        display:block;
+    }
+
+    /* FOOTER */
+
+    .home footer section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .home footer section article{
+        width: 20%;
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+
+/* DESKTOP */
+
+@media (min-width:769px){
+
+    *{
+        font-size: 1.5vw;
+    }
+
+    /* HEADER */
+
+    .home header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* MAIIN */
+
+    .home main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+
+    /* FOOTER */
+
+    .home footer section article{
+        width: 25%;
+    }
+
+}
